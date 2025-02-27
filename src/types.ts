@@ -1,0 +1,41 @@
+export interface ICountry {
+  name: {
+    common: string;
+    official: string;
+    nativeName?: any;
+  };
+  tld?: string[] | any;
+  cca2: string;
+  ccn3?: string;
+  cca3: string;
+  cioc?: string;
+  independent?: boolean;
+  status: string;
+  unMember: boolean;
+  currencies?: any;
+  idd?: { root: string; suffixes: string[] } | any;
+  capital?: string[] | any;
+  altSpellings: string[];
+  region: string;
+  subregion?: string;
+  languages?: Record<string, string> | any;
+  translations?: Record<string, { official: string; common: string }> | any;
+  latlng: [number, number];
+  landlocked: boolean;
+  area: number;
+  demonyms?: Record<string, { f: string; m: string }> | any;
+  flag: string;
+  maps: { googleMaps: string; openStreetMaps: string };
+  population: number;
+  car?: { signs: string[]; side: string } | any;
+  timezones: string[];
+  continents: string[];
+  flags: { png: string; svg: string; alt?: string };
+  coatOfArms: Record<string, unknown>;
+  startOfWeek: string;
+  capitalInfo?: { latlng: [number, number] } | any;
+  borders?: string[];
+  fifa?: string;
+  gini?: any;
+  postalCode?: any;
+}
