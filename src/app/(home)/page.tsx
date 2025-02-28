@@ -1,6 +1,6 @@
 "use client";
 
-import useSWR from "swr";
+import useSWR from "swr/immutable";
 
 import SkeletonDisplay from "./_components/SkeletonDisplay";
 import CountriesDisplay from "./_components/CountriesDisplay";

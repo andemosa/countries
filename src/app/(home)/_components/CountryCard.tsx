@@ -16,11 +16,11 @@ const CountryCard = ({
     <Link href={`/country/${cca3}`}>
       <Card className="h-full transition-transform hover:transform hover:scale-105">
         <CardHeader className="p-0">
-          <div className="relative aspect-[3/2] w-full">
+          <div className="relative aspect-[3/2] w-full flex items-center justify-center h-[250px] overflow-hidden">
             <img
               src={flags.svg || "/placeholder.svg"}
               alt={`Flag of ${name.common}`}
-              className="object-cover h-[200px]"
+              className="object-cover"
             />
           </div>
         </CardHeader>
