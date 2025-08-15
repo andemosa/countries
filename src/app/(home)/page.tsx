@@ -10,7 +10,7 @@ import { fetcher } from "@/lib/utils";
 
 export default function Home() {
   const { data, error, isLoading } = useSWR(
-    "https://restcountries.com/v3.1/all",
+    "https://restcountries.com/v3.1/all?fields=name,region,cca3,flags,population,capital",
     fetcher
   );
 

@@ -12,7 +12,7 @@ import { fetcher } from "@/lib/utils";
 
 const DetailsPage = ({ code }: { code: string }) => {
   const { data, error, isLoading } = useSWR(
-    `https://restcountries.com/v3.1/alpha/${code}`,
+    `https://restcountries.com/v3.1/alpha/${code}?fields=name,region,flags,population,capital,tld,currencies,languages,borders,subregion`,
     fetcher
   );
 
@@ -44,8 +44,7 @@ const DetailsPage = ({ code }: { code: string }) => {
   }
 
   if (data) {
-    const countryData = data[0];
-    return <CountryDetails {...countryData} />;
+    return <CountryDetails {...data} />;
   }
 
   return null;

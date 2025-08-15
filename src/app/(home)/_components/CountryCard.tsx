@@ -14,7 +14,7 @@ const CountryCard = ({
 }: ICountry) => {
   return (
     <Link href={`/country/${cca3}`}>
-      <Card className="h-full transition-transform hover:transform hover:scale-105">
+      <Card className="h-full transition-transform hover:transform hover:scale-105 flex flex-col justify-between">
         <CardHeader className="p-0">
           <div className="relative aspect-[3/2] w-full flex items-center justify-center h-[250px] overflow-hidden">
             <img
